@@ -3,9 +3,10 @@ import Navigation from "./Navigation";
 import Title from "./Title";
 import Footer from "./Footer";
 
-const Layout = ({children}) => {
+const Layout = ({children, className}) => {
+
     return (
-        <div>
+        <div className={className}>
             <Title/>
             <Navigation />
             {children}

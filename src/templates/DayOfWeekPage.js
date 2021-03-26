@@ -32,9 +32,8 @@ const DayOfWeekPage = ({pageContext}) => {
             }
         };
 
-        console.log("jjp",pageContext)
     return (
-        <Layout><DayOfWeek key={pageContext.dayIndex} content={{...pageContext, image: getImage(pageContext.image)}}/></Layout>
+        <Layout className={`background-class ${pageContext.dayOfWeek}`}><DayOfWeek key={pageContext.dayIndex} content={{...pageContext, image: getImage(pageContext.image)}}/></Layout>
     );
 };
 

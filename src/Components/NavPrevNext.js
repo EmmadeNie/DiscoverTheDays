@@ -19,7 +19,6 @@ const NavPrevNext = ({dayIndex}) => {
         <ul className={"layout-content-container nav-links"}>
             {getPrevLink()}
             {getNextLink()}
-            {dayIndex}
         </ul>
     );
 };

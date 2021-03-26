@@ -3,7 +3,7 @@ import NavPrevNext from "./NavPrevNext";
 
 const DayOfWeek = ({content}) => {
     return (
-       <> <div className={"layout-content-container day-of-week"}>
+       <div> <div className={"layout-content-container day-of-week"}>
             <div className={"day--title"}>
                 <h1>{content.dayOfWeek}</h1>
             </div>
@@ -18,7 +18,7 @@ const DayOfWeek = ({content}) => {
                 <p>{content.dayDescription}</p>
             </div>
         </div>
-        <div> <NavPrevNext key={content.dayIndex} dayIndex={content.dayIndex}/></div></>
+        <div> <NavPrevNext key={content.dayIndex} dayIndex={content.dayIndex}/></div></div>
     );
 };
 
