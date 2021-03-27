@@ -10,7 +10,6 @@ import saturn from "../media/saturn.jpg";
 import sun from "../media/sun.jpg";
 
 const DayOfWeekPage = ({pageContext}) => {
-
         const getImage = (image) => {
             switch (image) {
                 case "mars":

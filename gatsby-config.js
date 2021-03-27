@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Discover Days of the Week",
+    title: `Discover days of the Week`,
+    description: `Inspired by Thailand with Love`
   },
-  plugins: [],
+  plugins: [`gatsby-transformer-json`, {resolve: `gatsby-source-filesystem`, options: {path: `./src/data/`}}],
 };

@@ -9,9 +9,12 @@ const Nav = () => {
     </li>)
 
     return (
+        <>
             <ul className={"layout-content-container nav-links"}>
                   {getNavLinks()}
-            </ul>
+            </ul><div className={"layout-content-container homepage"}>
+            <Link to={`/Home/`}>Home</Link>
+        </div></>
     );
 };
 
